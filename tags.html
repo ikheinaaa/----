@@ -1,21 +1,16 @@
 ---
 layout: default
-tag: ""
+permalink: /Tag/
 ---
 
-<div class="archive-head">
+
+<div class="arhive-head">
   <div class="container">
     <h1 class="archive-title">Tag: <span>{{ page.tag }}</span></h1>
   </div>
 </div>
 
-{% assign tag_name = page.tag | downcase %}
-{% assign posts = site.posts | where: "tags", tag_name %}
 
-{% if posts.size > 0 %}
-  {% for post in posts %}
-    {% include article-content.html %}
-  {% endfor %}
-{% else %}
-  <p>No posts found for this tag.</p>
-{% endif %}
+{% for post in page.posts %}
+  {% include article-content.html %}
+{% endfor %}
