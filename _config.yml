@@ -1,5 +1,5 @@
-baseurl: "businessidea.biz.id" # the subpath of your site, e.g. /blog
-url: "businessidea.biz.id" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://businessidea.biz.id" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
